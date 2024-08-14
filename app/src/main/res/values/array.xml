@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xposed_scope">
+        <item>android</item>
+        <item>com.xxun.xunlauncher</item>
+        <item>com.xxun.watch.xunsettings</item>
+        <item>com.android.packageinstaller</item>
+    </string-array>
+</resources>

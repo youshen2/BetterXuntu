@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/Theme.BetterXuntu">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="XXun综合优化模块" />
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DialogActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:label="杂项设置"
+            android:name=".activity.module.OtherActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:label="启动器设置"
+            android:name=".activity.module.XunLauncherActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:label="系统界面设置"
+            android:name=".activity.module.SystemuiActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:label="防右滑设置"
+            android:name=".activity.module.FuckSwipeActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:label="米兔设置"
+            android:name=".activity.module.XunSettingsActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:label="关于模块"
+            android:name=".activity.AboutActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:id="@+id/card_view">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp">
+        <moye.module.betterxuntu.view.MarqueeTextView
+            android:id="@+id/app_name"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:text="软件名称"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/app_check"
+            tools:ignore="MissingConstraints" />
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/app_check"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/package_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="包名"
+            android:alpha="0.85"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/app_check" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
